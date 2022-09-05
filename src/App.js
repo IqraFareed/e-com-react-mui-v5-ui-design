@@ -1,9 +1,12 @@
-import { Button, Container } from "@mui/material";
+import { Button, Container, ThemeProvider } from "@mui/material";
+import theme from "./styles/theme/index";
 const App = () => {
   return (
-    <Container maxWidth="xl" sx={{ background: "#fff" }}>
-      <Button>hello</Button>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container maxWidth="xl" sx={{ background: "#fff" }}>
+        <Button color="secondary">hello</Button>
+      </Container>
+    </ThemeProvider>
   );
 };
 

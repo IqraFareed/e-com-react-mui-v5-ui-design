@@ -39,7 +39,9 @@ export const ProductFavButton = styled(ProductActionButton, {
     top: 0,
   },
 }));
-export const ProductActionWrapper = styled(Box)(({ show, theme }) => ({
+export const ProductActionWrapper = styled(Box, {
+  shouldForwardProp: (prop) => prop !== "show",
+})(({ show, theme }) => ({
   [theme.breakpoints.up("md")]: {
     display: show ? "visible" : "none",
     position: "absolute",

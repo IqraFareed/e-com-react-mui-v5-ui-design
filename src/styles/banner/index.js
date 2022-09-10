@@ -60,9 +60,9 @@ export const BannerShopButton = styled(Button, {
   overridesResolver: (props, styles) => [
     styles.root,
 
-    props.colors === "primary" && styles.primary,
+    props.color === "primary" && styles.primary,
 
-    props.colors === "secondary" && styles.secondary,
+    props.color === "secondary" && styles.secondary,
   ],
 })(({ theme }) => ({
   padding: "20px 0px",

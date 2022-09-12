@@ -9,7 +9,9 @@ import {
 } from "../../styles/appbar";
 import SearchIcon from "@mui/icons-material/Search";
 import Actions from "./Actions";
+import { useUIContext } from "../../Context/ui";
 const AppbarDesktop = ({ matches }) => {
+  const { setShowSearch } = useUIContext();
   return (
     <AppbarContainer>
       <AppbarHeader>Shop Yeh</AppbarHeader>
@@ -20,7 +22,7 @@ const AppbarDesktop = ({ matches }) => {
         <ListItemText primary="Contact Us" />
         <ListItemButton>
           <ListItemIcon>
-            <SearchIcon />
+            <SearchIcon onClick={() => setShowSearch(true)} />
           </ListItemIcon>
         </ListItemButton>
       </MyList>

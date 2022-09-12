@@ -14,7 +14,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import SendIcon from "@mui/icons-material/Send";
-import { ColorizeSharp } from "@mui/icons-material";
+
 const Footer = () => {
   return (
     <Box

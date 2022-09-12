@@ -7,6 +7,7 @@ import theme from "./styles/theme/index";
 import Footer from "./Components/Footer";
 import AppDrawer from "./Components/drawer";
 import { UIProvider } from "./Context/ui";
+import SearchBox from "./Components/Search";
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
@@ -15,7 +16,7 @@ const App = () => {
           <Appbar />
           <Banner />
           <SliderPromotions />
-
+          <SearchBox />
           <Products />
           <Footer />
           <AppDrawer />

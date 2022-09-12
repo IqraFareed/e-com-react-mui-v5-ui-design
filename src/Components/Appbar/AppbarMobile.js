@@ -6,7 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import Actions from "../Appbar/Actions";
 import { useUIContext } from "../../Context/ui";
 const AppbarMobile = ({ matches }) => {
-  const { setDrawerOpen } = useUIContext();
+  const { setDrawerOpen, setShowSearch } = useUIContext();
   return (
     <div>
       <AppbarContainer>
@@ -17,7 +17,7 @@ const AppbarMobile = ({ matches }) => {
           Shop Yah
         </AppbarHeader>
         <IconButton>
-          <SearchIcon />
+          <SearchIcon onClick={() => setShowSearch(true)} />
         </IconButton>
         <Actions matches={matches} />
       </AppbarContainer>
